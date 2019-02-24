@@ -6,6 +6,16 @@ script:
 branches:
   only:
     - master
+notifications:
+  email: false
+os:
+  - linux
+  - osx
+  - windows
+matrix:
+  allow_failures:
+    - os: windows
+install: npm install
 deploy:
   provider: heroku
   api_key:
