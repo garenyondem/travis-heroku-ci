@@ -4,6 +4,9 @@
   "description": "CI/CD demo using Heroku/Nodejs/Travis",
   "main": "index.js",
   "private": true,
+  "engines": {
+    "node": ">=10.15.0"
+  },
   "dependencies": {
     "express": "^4.16.4"
   },
